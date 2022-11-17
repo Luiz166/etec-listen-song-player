@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/ajustes.css">
-    <!DOCTYPE html>
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="css/conta-planos.css">
     <link rel="stylesheet" href="./css/home/home-footer.css">
-    <title>Ajustes</title>
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <title>Ajustes - listen!</title>
 </head>
 <body>
     <div class="container">
@@ -19,14 +19,41 @@
         <div class="container">
             <main>
                 <h1>Ajustes</h1>
+
+                <section class="user_info">
+                    <img src="./imagens/icons/conta.png" alt="" class="user-profile-pic">
+                    <ul>
+                        <li>
+                            <input type="text" id="username" value="Arthur Santana" readonly> 
+                        </li>
+                        <li><a href="conta.html">Ir para a conta</a></li>
+                    </ul>
+                    <button id="btn_edit">
+                        <i class="fa-solid fa-pen-to-square fa-2xl" style=" color: white;"></i>                    
+                    </button>
+                    <button id="btn_check">
+                        <i class="fa-solid fa-check fa-2xl" style="color: white;"></i>
+                    </button>
+                </section>
                 <div class="form_group">
-                    <label for="chck_rest" class="switch">
-                        Modo restrito
-                        <input type="checkbox" name="chck_rest" id="chck_rest">
-                    </label>
+                    <span>Modo Restrito</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                </div>
+
+                <div class="form_group">
+                    <span>Alta qualidade</span>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                      </label>
                 </div>
             </main>
         </div>
     </div>
+    <script src="https://kit.fontawesome.com/bdc645c07d.js" crossorigin="anonymous"></script>
+    <script src="js/settings.js"></script>
 </body>
 </html>
