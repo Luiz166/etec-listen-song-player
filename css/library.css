@@ -1,0 +1,68 @@
+@import url(variaveis.css);
+@import url(ajustes.css);
+
+.recent_act{
+    color: white;
+}
+.recent_act .title{
+    display: flex;
+    align-items: center;
+}
+.dropdown{
+    display: flex;
+    flex-direction: column;
+}
+.dropdown ul{
+    list-style: none;
+}
+.dropdown #dropBtn{
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 10rem;
+    cursor: pointer;
+}
+.dropdown_content, .dropdown_content2, .dropdown_content3{
+    display: none;
+    width: 100%;
+    animation: rotateX 300ms ease-in-out forwards;
+    text-align: center;
+}
+
+#dropBtn {
+    margin-left: 10rem;
+}
+#left{
+    margin-left: 10rem;
+}
+
+
+@keyframes rotateX {
+    0% {
+      opacity: 0;
+      transform: rotateX(-90deg);
+    }
+    50% {
+      transform: rotateX(-20deg);
+    }
+    100% {
+      opacity: 1;
+      transform: rotateX(0deg);
+    }
+  }
+
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.images img{
+    width: 8rem;
+    height: 8rem;
+}
+.card_text{
+    text-align: center;
+    font-size: .8rem;
+}

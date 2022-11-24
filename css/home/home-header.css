@@ -24,6 +24,7 @@ span.header__toggler-icon {
 ul.header__ul {
 	display: flex;
 	gap: 3rem;
+	width: 100%;
 }
 
 header.header {
@@ -74,4 +75,30 @@ img.header__icon {
 	width: 2.2rem;
 	height: 2.2rem;
 	margin-right: 0.15rem;
+}
+
+li#header__search{
+	align-self: flex-end;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	margin-bottom: 6px;
+}
+
+input#header__input {
+	width: 20rem;
+}
+
+button.btn-search {
+	border: solid 2px var(--destaque);
+	color: var(--destaque);
+}
+
+button.btn-search:hover {
+	border: solid 2px var(--destaque);
+	background-color: var(--destaque);
+	color: var(--claro);
+	transition: 0.2s;
 }
